@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_32">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_24"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/space_36"
+                android:layout_height="@dimen/space_36"
+                android:src="@drawable/ic_send_btn"/>
+
+            <TextView
+                android:id="@+id/send_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12"
+                style="@style/font_14_black1"
+                android:gravity="center"
+                android:text="@string/str_send"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/send_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_12"
+            style="@style/font_12_gray1"
+            android:gravity="center"
+            android:text="@string/msg_send_confirm"/>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_12"
+                android:layout_marginRight="@dimen/space_8"
+                android:layout_marginLeft="@dimen/space_8"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:background="@drawable/border"/>
+                <TextView
+                    android:id="@+id/recipient_address_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_12"
+                    style="@style/font_10_gray1"
+                    android:text="@string/str_recipient_address"/>
+
+                <TextView
+                    android:id="@+id/recipient_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_72"
+                    style="@style/font_10_black1"
+                    android:gravity="right"
+                    android:text="sdfdfsfslkfhlkenfclkenflkenflkenwlkfnwelfknelwkfnlweknflekwnflewnlf"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:background="@drawable/dashborder"/>
+                <TextView
+                    android:id="@+id/amount_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_16"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_12"
+                    style="@style/font_10_gray1"
+                    android:text="@string/str_send_amount"/>
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_24"
+                    style="@style/font_10_black1"
+                    android:gravity="right"
+                    android:text="2.00000000 BTC"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:background="@drawable/dashborder"/>
+
+                <TextView
+                    android:id="@+id/fee_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_16"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_12"
+                    style="@style/font_10_gray1"
+                    android:text="@string/str_total_fee"/>
+
+                <TextView
+                    android:id="@+id/fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_24"
+                    style="@style/font_10_black1"
+                    android:gravity="right"
+                    android:text="0.23232 BTC"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:background="@drawable/dashborder"/>
+
+                <TextView
+                    android:id="@+id/remain_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_16"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_12"
+                    style="@style/font_10_gray1"
+                    android:text="@string/str_remaining_balance"/>
+
+                <TextView
+                    android:id="@+id/remain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_24"
+                    style="@style/font_10_black1"
+                    android:gravity="right"
+                    android:text="32423443.23232 BTC"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:layout_marginRight="@dimen/space_12"
+                    android:layout_marginLeft="@dimen/space_12"
+                    android:background="@drawable/border"/>
+
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_32"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_nega"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dia_white_left"
+                style="@style/font_15_primary"
+                android:textAllCaps="false"
+                android:text="@string/str_cancel"/>
+            <Button
+                android:id="@+id/btn_posi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dia_white_right"
+                style="@style/font_15_primary"
+                android:textAllCaps="false"
+                android:text="@string/str_send"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

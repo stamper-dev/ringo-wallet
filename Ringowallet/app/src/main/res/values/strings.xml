@@ -1,0 +1,362 @@
+<resources>
+    <string name="app_name">Ringo Wallet</string>
+
+    <string name="wannabit_pro_url">https://wallet-api.wannabit.io/</string>
+    <string name="crypto_compare_url">https://min-api.cryptocompare.com/</string>
+    <string name="ether_scan_url">http://api.etherscan.io/</string>
+    <string name="blockchain_info_url">https://blockchain.info/</string>
+    <string name="blockcypher_info_url">https://api.blockcypher.com/</string>
+    <string name="gastracker_info_url">https://api.gastracker.io/</string>
+    <string name="blockdozer_info_url">https://bch.blockdozer.com/</string>
+    <string name="qtum_info_url">https://explorer.qtum.org/</string>
+    <string name="db_pw">test</string>
+
+
+
+    <string name="title_create_restore">Create Wallet</string>
+    <string name="title_private_key">Private Key</string>
+    <string name="title_create_new_wallet">Create New Wallet</string>
+    <string name="title_restore_mnemonics">Restore Mnemonics</string>
+    <string name="title_confirm_new_mnemonic">Confirm New Mnemonics</string>
+    <string name="title_set_password">Password Set</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_price">Price</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_total_balance">Total Balance</string>
+    <string name="title_check_password">Password</string>
+
+    <string name="dialog_title_set_fingerprint">Using Fingerprint</string>
+    <string name="dialog_init_wallet">No Wallet</string>
+    <string name="dialog_add_wallet">Add New Wallet</string>
+    <string name="dialog_add_key_pair">Add New Wallet</string>
+    <string name="dialog_send_request_success_title">Send Request Success</string>
+    <string name="dialog_delete_title">Delete Key</string>
+    <string name="dialog_delete_msg">I hope you have backed up your key or mnemonics.\nDelete without backup, you will never find this key again.</string>
+    <string name="dialog_title_no_mnemonic">No Mnemonic</string>
+
+    <string name="str_restore">Restore</string>
+    <string name="str_skip">Skip this</string>
+    <string name="str_private_key">Private Key</string>
+    <string name="str_mnemonic">Mnemonic</string>
+    <string name="str_paste">Paste</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_next">Next</string>
+    <string name="str_create">Create</string>
+    <string name="str_refresh">Refresh</string>
+    <string name="str_update">Update</string>
+    <string name="str_copy">Copy</string>
+    <string name="str_explore">Explore</string>
+    <string name="str_start">Start</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_close">Close</string>
+    <string name="str_ok">OK</string>
+    <string name="str_no">No</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_insert">Insert</string>
+    <string name="str_coming_soon">Coming soon</string>
+    <string name="str_send">Send</string>
+    <string name="str_receive">Receive</string>
+    <string name="str_swap">Swap</string>
+    <string name="str_sent">Sent</string>
+    <string name="str_received">Received</string>
+    <string name="str_total_balance">Total Balance</string>
+    <string name="str_recipient_address">Recipient Address</string>
+    <string name="str_qrcode">QR Code</string>
+    <string name="str_recent">Recent</string>
+    <string name="str_send_amount">Send Amount</string>
+    <string name="str_clear">Clear</string>
+    <string name="str_key_pair_manage">Key Manage</string>
+    <string name="str_mnemonic_manage">Mnemonic Manage</string>
+    <string name="str_currency">Currency</string>
+    <string name="str_decimal_manage">Display Decimal Position</string>
+    <string name="str_private">Private</string>
+    <string name="str_homepage">About Us</string>
+    <string name="str_telegram">Telegram</string>
+    <string name="str_github">GitHub</string>
+    <string name="str_opensource">Open Source Licence</string>
+    <string name="str_usd">USD</string>
+    <string name="str_krw">KRW</string>
+    <string name="str_tx_history">Transaction History</string>
+    <string name="str_total_fee">Total Fee</string>
+    <string name="str_remaining_balance">Remaining Balance</string>
+    <string name="str_with_private_key">Private Key</string>
+    <string name="str_mnemonic_check">Mnemonic check</string>
+    <string name="str_lock_time">Lock Time</string>
+    <string name="str_lock_time_set">Lock Time Set</string>
+    <string name="str_fingerprint">Fingerprint</string>
+    <string name="str_error">Network error</string>
+    <string name="str_mnemonics">Mnemonics</string>
+    <string name="str_enter_mnemonics">Enter Mnemonics</string>
+    <string name="str_share">Share</string>
+
+
+
+
+
+    <string name="msg_ringo_greeting">Welcome to Ringo Wallet</string>
+    <string name="msg_restore_by_key">Restore by Private Key</string>
+    <string name="msg_restore_by_mnemonic">Restore by Mnemonics</string>
+    <string name="msg_new_wallet">Create new Mnemonics</string>
+    <string name="msg_no_wallet">No registered wallet.</string>
+    <string name="msg_start_app">Start Ringo Wallet.</string>
+    <string name="msg_select_coin">Select Coin</string>
+    <string name="msg_restore_mnemonics_msg01">Please, Insert your mnemonics</string>
+    <string name="msg_generate_msg01">Please, Copy the words below.</string>
+    <string name="msg_generate_msg02">When you restore your wallet, you can prove you own the wallet with those word. \nPut it on paper and keep it in a safe place.</string>
+    <string name="msg_copied">Copied to clipboard</string>
+    <string name="msg_confirm_msg01">Checking Mnemonics.</string>
+    <string name="msg_confirm_msg02">Please select the appropriate words in order.\nIf they do not match, restoration is not possible.</string>
+    <string name="msg_confirm_failed">Please remember your Mnemonic.</string>
+    <string name="msg_password_init">Please insert your password.</string>
+    <string name="msg_password_confirm">Insert again for confirm.</string>
+    <string name="msg_password_validate">Insert your password for continue.</string>
+    <string name="msg_password_warning">Can not recover if you forget.</string>
+    <string name="msg_password_send">Please type your password for send budget.</string>
+    <string name="msg_password_check">Please type your password for more information.</string>
+    <string name="msg_password_unlock">Please type your password for unlock.</string>
+    <string name="msg_using_fingerprint">Do you want to enable fingerprint authentication?</string>
+    <string name="msg_password_init_success">Your password has been saved securely.</string>
+    <string name="msg_init_wallet">No wallet registered. Would you like to create a basic wallet with your mnemonics?</string>
+    <string name="msg_new_key_pair">How do you create a new wallet for %1$s?</string>
+    <string name="msg_gen_from_mnemonic">Generate from Mnemonic</string>
+    <string name="msg_gen_with_private_key">Insert New Private Key</string>
+    <string name="msg_add_key_success">New wallet are generated successfully.</string>
+    <string name="msg_wallet_made_success">Wallet initial setup completed successfully.</string>
+    <string name="msg_coming_soon">preparing coin quotes. start the service soon!</string>
+    <string name="msg_no_transaction">No transaction history.</string>
+    <string name="msg_full_position">Display Full Position</string>
+    <string name="msg_4_position">Display 4 Position</string>
+    <string name="msg_6_position">Display 6 Position</string>
+    <string name="msg_under_at_min">At least %1$s</string>
+    <string name="msg_send_confirm">Please check below carefully, \nbefore send your budget.</string>
+    <string name="msg_send_request_success">Send transaction request is success, you can check with txid in block chain explore.</string>
+    <string name="msg_total_fee">Total Estimated Fee</string>
+    <string name="msg_invalid_amount">Invalid Amount</string>
+    <string name="msg_password_wrong">Wrong Password.</string>
+    <string name="msg_no_favo_list">No Favorite Wallet.</string>
+    <string name="msg_welcome_title_1">Multiple</string>
+    <string name="msg_welcome_msg1_1">Displays the status of various coin assets.</string>
+    <string name="msg_welcome_msg2_1">(BTC, ETH, ERC20, ETC, LTC, ...)</string>
+    <string name="msg_welcome_title_2">Decentralized</string>
+    <string name="msg_welcome_msg1_2">Perfectly decentralized<![CDATA[" & "]]>user friendly</string>
+    <string name="msg_welcome_msg2_2">Crypto wallet for everyone from beginners to skilled users.</string>
+    <string name="msg_welcome_title_3">Reliable</string>
+    <string name="msg_welcome_msg1_3">Fully open source.</string>
+    <string name="msg_welcome_msg2_3">Our source is open for you to check and validate.</string>
+    <string name="msg_check_mnemonic">Checking Mnemonics.</string>
+    <string name="msg_check_key">Checking Private Key.</string>
+    <string name="msg_delete_key_success">Delete key successfully.</string>
+    <string name="msg_can_not_delete_last_key">Can not delete last key.</string>
+    <string name="msg_update_msg">New version available. \nWould you like to update the application?</string>
+    <string name="msg_update_force_msg">Update required to continue using application. \nWould you like to update the application?</string>
+    <string name="msg_prepareing_swap">Preparing</string>
+    <string name="msg_request_finger">Use your fingerprint for password</string>
+    <string name="msg_no_mnemonic">No Mnemonics are registered. Do you want to init it now?</string>
+
+
+
+
+    <string name="font_regular">montserrat/Montserrat-Regular.otf</string>
+    <string name="font_bold">montserrat/Montserrat-Bold.otf</string>
+    <string name="font_light">montserrat/Montserrat-Light.otf</string>
+
+
+    <string name="msg_error_invalid_key">Invalid key.</string>
+    <string name="msg_error_permission">You rejected permission. please enable for this.</string>
+    <string name="msg_error_invalid_address">Invalid address.</string>
+    <string name="msg_error_password_not_same">Password is not same. Please init password again!</string>
+    <string name="msg_error_clipboard">No text from clipboard.</string>
+    <string name="msg_error_self_address">Self address are not support.</string>
+    <string name="msg_key_already_existed">This key, you have already entered.</string>
+    <string name="msg_not_enough_balance">This address has zero balance to send.</string>
+    <string name="msg_not_enough_gas_fee">Not enough gas fee.</string>
+    <string name="msg_network_error">Your network is currently unstable.\nPlease try again later.</string>
+    <string name="msg_dust_remain_error">Dust amount error. \nRemain amount should bigger than 0.0022 or 0</string>
+
+
+    <string name="str_tx_time_format">yy/MM/dd HH:mm:ss</string>
+    <string name="str_decimal_pattern_0">###,###,###,###,###,###,###,##0</string>
+    <string name="str_decimal_pattern_1">###,###,###,###,###,###,###,##0.0</string>
+    <string name="str_decimal_pattern_2">###,###,###,###,###,###,###,##0.00</string>
+    <string name="str_decimal_pattern_3">###,###,###,###,###,###,###,##0.000</string>
+    <string name="str_decimal_pattern_4">###,###,###,###,###,###,###,##0.0000</string>
+    <string name="str_decimal_pattern_5">###,###,###,###,###,###,###,##0.00000</string>
+    <string name="str_decimal_pattern_6">###,###,###,###,###,###,###,##0.000000</string>
+    <string name="str_decimal_pattern_7">###,###,###,###,###,###,###,##0.0000000</string>
+    <string name="str_decimal_pattern_8">###,###,###,###,###,###,###,##0.00000000</string>
+    <string name="str_decimal_pattern_9">###,###,###,###,###,###,###,##0.000000000</string>
+    <string name="str_decimal_pattern_10">###,###,###,###,###,###,###,##0.0000000000</string>
+    <string name="str_decimal_pattern_11">###,###,###,###,###,###,###,##0.00000000000</string>
+    <string name="str_decimal_pattern_12">###,###,###,###,###,###,###,##0.000000000000</string>
+    <string name="str_decimal_pattern_13">###,###,###,###,###,###,###,##0.0000000000000</string>
+    <string name="str_decimal_pattern_14">###,###,###,###,###,###,###,##0.00000000000000</string>
+    <string name="str_decimal_pattern_15">###,###,###,###,###,###,###,##0.000000000000000</string>
+    <string name="str_decimal_pattern_16">###,###,###,###,###,###,###,##0.0000000000000000</string>
+    <string name="str_decimal_pattern_17">###,###,###,###,###,###,###,##0.00000000000000000</string>
+    <string name="str_decimal_pattern_18">###,###,###,###,###,###,###,##0.000000000000000000</string>
+
+
+    <string name="path_btc">m/44<![CDATA["'"]]>/0<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>
+    <string name="path_eth">m/44<![CDATA["'"]]>/60<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>
+    <string name="path_ltc">m/44<![CDATA["'"]]>/2<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>
+    <string name="path_bch">m/44<![CDATA["'"]]>/145<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>
+    <string name="path_etc">m/44<![CDATA["'"]]>/61<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>
+    <!--<string name="path_quntum">m/44<![CDATA["'"]]>/0<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>-->
+
+
+    <string-array name="lock_time">
+        <item>Immediately</item>
+        <item>10 Sec</item>
+        <item>30 Sec</item>
+        <item>60 Sec</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="password_number">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="password_alphabet">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+    <string name="btc_min">5430</string>
+    <string name="bch_min">5430</string>
+    <string name="ltc_min">100000</string>
+    <string name="qtum_min">220000</string>
+
+    <string-array name="btc_fee">
+        <item>700</item>
+        <item>1500</item>
+        <item>2250</item>
+    </string-array>
+
+    <string name="btc_fee_l">700</string>
+    <string name="btc_fee_s">1500</string>
+    <string name="btc_fee_h">2250</string>
+
+
+    <string-array name="bch_fee">
+        <item>300</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+
+    <string name="bch_fee_l">300</string>
+    <string name="bch_fee_s">5000</string>
+    <string name="bch_fee_h">10000</string>
+
+
+    <string-array name="ltc_fee">
+        <item>25000</item>
+        <item>60000</item>
+        <item>300000</item>
+    </string-array>
+    <string name="ltc_fee_l">25000</string>
+    <string name="ltc_fee_s">60000</string>
+    <string name="ltc_fee_h">300000</string>
+
+
+
+    <string-array name="etc_gas_price">
+        <item>22</item>
+        <item>41</item>
+        <item>60</item>
+    </string-array>
+
+    <string name="etc_pas_price_l">22</string>
+    <string name="etc_pas_price_s">41</string>
+    <string name="etc_pas_price_h">60</string>
+
+
+    <string-array name="etc_gas_limit">
+        <item>21000</item>
+        <item>42000</item>
+        <item>63000</item>
+    </string-array>
+
+    <string name="etc_gas_limit_l">21000</string>
+    <string name="etc_gas_limit_s">42000</string>
+    <string name="etc_gas_limit_h">63000</string>
+
+
+
+
+    <string-array name="eth_gas_price">
+        <item>22</item>
+        <item>41</item>
+        <item>60</item>
+    </string-array>
+
+    <string name="eth_pas_price_l">22</string>
+    <string name="eth_pas_price_s">41</string>
+    <string name="eth_pas_price_h">60</string>
+
+
+    <string-array name="eth_gas_limit">
+        <item>21000</item>
+        <item>42000</item>
+        <item>63000</item>
+    </string-array>
+
+    <string name="eth_gas_limit_l">21000</string>
+    <string name="eth_gas_limit_s">42000</string>
+    <string name="eth_gas_limit_h">63000</string>
+
+
+
+    <string-array name="erc_gas_limit">
+        <item>53000</item>
+        <item>80000</item>
+        <item>106000</item>
+    </string-array>
+
+    <string name="erc_gas_limit_l">53000</string>
+    <string name="erc_gas_limit_s">80000</string>
+    <string name="erc_gas_limit_h">106000</string>
+
+
+    <string-array name="qtum_fee">
+        <item>500000</item>
+        <item>1000000</item>
+        <item>5000000</item>
+    </string-array>
+    <string name="qtum_fee_l">500000</string>
+    <string name="qtum_fee_s">1000000</string>
+    <string name="qtum_fee_h">5000000</string>
+</resources>

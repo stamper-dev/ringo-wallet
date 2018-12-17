@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".acticites.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_main2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/space_28"
+        android:layout_marginRight="@dimen/space_28"
+        android:layout_marginBottom="-12dp"
+        android:layout_alignBottom="@+id/card_main0"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="@dimen/space_6"
+        app:cardBackgroundColor="#88FFFFFF"
+        app:cardElevation="0.5dp"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_main1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginBottom="-5dp"
+        android:layout_alignBottom="@+id/card_main0"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="@dimen/space_6"
+        app:cardBackgroundColor="#CCFFFFFF"
+        app:cardElevation="1dp"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_main0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_marginRight="@dimen/space_12"
+        android:layout_marginBottom="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="@dimen/space_6"
+        app:cardElevation="1.5dp"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardUseCompatPadding="true" >
+        <RelativeLayout
+            android:id="@+id/item_coin_root"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80">
+            <ImageView
+                android:id="@+id/item_coin_img"
+                android:layout_width="@dimen/space_50"
+                android:layout_height="@dimen/space_50"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_12"/>
+
+
+            <LinearLayout
+                android:id="@+id/item_coin_titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/item_coin_img"
+                android:layout_marginLeft="@dimen/space_8">
+                <TextView
+                    android:id="@+id/item_coin_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="@dimen/space_120"
+                    android:maxLines="1"
+                    style="@style/font_12_black1"
+                    tools:text="BitCoin"/>
+                <TextView
+                    android:id="@+id/item_coin_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:maxWidth="@dimen/space_120"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    style="@style/font_11_gray2"
+                    tools:text="BitCoin"/>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/item_coin_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_12"
+                android:src="@drawable/ic_arrow_next_gr"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="right|center_vertical"
+                android:layout_toLeftOf="@+id/item_coin_arrow"
+                android:layout_toRightOf="@+id/item_coin_titles"
+                android:layout_marginRight="@dimen/space_8"
+                android:layout_marginLeft="@dimen/space_8"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/item_coin_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/font_12_black1"
+                    tools:text="2.00000000"/>
+                <TextView
+                    android:id="@+id/item_coin_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    style="@style/font_11_gray2"
+                    tools:text="343,345,234 KRW"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

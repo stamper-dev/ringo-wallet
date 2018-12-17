@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>min_version_code</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>last_version_code</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>erc20_tokens_version</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>qrc20_tokens_version</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>support_coin_type</key>
+        <value>{"BTC":true,"LTC":true,"ETH":true,"ERC20":true,"BCH":false,"ETC":true,"QTUM":false,"QRC20":false,"BSV":false}</value>
+    </entry>
+</defaultsMap>

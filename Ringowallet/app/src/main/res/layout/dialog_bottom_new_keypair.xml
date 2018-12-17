@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_36"
+        android:layout_marginRight="@dimen/space_12"
+        android:layout_marginLeft="@dimen/space_12"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/dialog_bottom_add_keypair_img"
+            android:layout_width="@dimen/space_50"
+            android:layout_height="@dimen/space_50"
+            android:src="@drawable/bitcoin_ic"/>
+
+        <TextView
+            android:id="@+id/dialog_bottom_add_keypair_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:gravity="center"
+            style="@style/font_15_black1"
+            android:text="@string/dialog_add_key_pair"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dialog_bottom_add_keypair_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_marginRight="@dimen/space_32"
+        android:layout_marginLeft="@dimen/space_32"
+        style="@style/font_15_gray1"
+        android:gravity="center_horizontal"
+        android:text="@string/msg_new_key_pair"/>
+
+    <Button
+        android:id="@+id/btn_gen_from_mnemonic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_28"
+        android:layout_marginRight="@dimen/space_28"
+        android:layout_marginTop="@dimen/space_32"
+        android:minHeight="@dimen/space_50"
+        android:background="@drawable/btn_pri_rect_round"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/btn_text_color"
+        android:text="@string/msg_gen_from_mnemonic"
+        android:textAllCaps="false"
+        android:outlineProvider="none"/>
+
+    <Button
+        android:id="@+id/btn_gen_from_private_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_28"
+        android:layout_marginRight="@dimen/space_28"
+        android:layout_marginTop="@dimen/space_12"
+        android:layout_marginBottom="@dimen/space_40"
+        android:minHeight="@dimen/space_50"
+        android:background="@drawable/btn_black_rect_round"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/btn_text_color"
+        android:text="@string/msg_gen_with_private_key"
+        android:textAllCaps="false"
+        android:outlineProvider="none"/>
+
+
+</LinearLayout>

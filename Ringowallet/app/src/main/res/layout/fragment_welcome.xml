@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_80"
+        android:layout_marginLeft="@dimen/space_50"
+        android:src="@drawable/welcome_logo"/>
+    <LinearLayout
+        android:id="@+id/desLayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_80"
+        android:layout_marginLeft="@dimen/space_50"
+        android:layout_marginRight="@dimen/space_50"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/font_32_primary"
+            android:text="Multiple"/>
+        <TextView
+            android:id="@+id/msg01Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_12"
+            style="@style/font_14_black1"/>
+        <TextView
+            android:id="@+id/msg02Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            style="@style/font_15_black1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="@dimen/space_50"
+        android:layout_marginLeft="@dimen/space_28"
+        android:layout_marginRight="@dimen/space_28"
+        android:layout_marginBottom="@dimen/space_28"
+        android:background="@drawable/btn_black_rect_round"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/btn_text_color"
+        android:text="@string/str_start"
+        android:textAllCaps="false"
+        android:outlineProvider="none"/>
+
+</RelativeLayout>

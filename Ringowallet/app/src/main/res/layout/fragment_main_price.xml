@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_gray2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="@dimen/space_50"
+            android:layout_height="@dimen/space_50"
+            android:src="@drawable/coinprice_comingsoon"/>
+
+        <TextView
+            android:id="@+id/price_msg0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_28"
+            android:layout_marginRight="@dimen/space_28"
+            android:layout_marginTop="@dimen/space_18"
+            android:gravity="center"
+            style="@style/font_15_black1"
+            android:text="@string/str_coming_soon"/>
+
+        <TextView
+            android:id="@+id/price_msg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_28"
+            android:layout_marginRight="@dimen/space_28"
+            android:layout_marginTop="@dimen/space_12"
+            android:gravity="center"
+            style="@style/font_12_gray1"
+            android:text="@string/msg_coming_soon"/>
+    </LinearLayout>
+
+</RelativeLayout>

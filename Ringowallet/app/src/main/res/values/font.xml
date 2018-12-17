@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="font_12_primary" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="font_15_primary" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="font_32_primary" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_32</item>
+    </style>
+
+
+    <style name="font_12_primary_light" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_primary_light</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+
+
+    <style name="font_12_white" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="font_14_white" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="font_15_white" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="font_19_white" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_19</item>
+    </style>
+
+    <style name="font_24_white" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+
+    <style name="font_10_black1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_black1</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="font_12_black1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_black1</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="font_14_black1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_black1</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="font_15_black1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_black1</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="font_19_black1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_black1</item>
+        <item name="android:textSize">@dimen/text_size_19</item>
+    </style>
+
+    <style name="font_20_black1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_black1</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="font_24_black1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_black1</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="font_32_black1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_black1</item>
+        <item name="android:textSize">@dimen/text_size_32</item>
+    </style>
+
+
+
+
+    <style name="font_15_gray1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_gray1</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="font_14_gray1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_gray1</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="font_12_gray1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_gray1</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="font_10_gray1" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_gray1</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+
+    <style name="font_15_gray2" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_gray2</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="font_14_gray2" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_gray2</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="font_12_gray2" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_gray2</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="font_11_gray2" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_gray2</item>
+        <item name="android:textSize">@dimen/text_size_11</item>
+    </style>
+
+
+    <style name="font_12_error_red" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_red</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="font_14_error_red" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_red</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="font_15_error_red" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_font_red</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+
+</resources>

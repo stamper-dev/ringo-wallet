@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/font_15_white"
+            android:text="Details"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/tool_bar">
+        <wannabit.io.ringowallet.views.KKViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <wannabit.io.ringowallet.views.UnderlinePageIndicator
+            android:id="@+id/indicator"
+            android:layout_height="4dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/space_18"
+            android:layout_marginRight="@dimen/space_18"
+            android:layout_marginBottom="@dimen/space_14"
+            android:background="@color/colorPrimaryDark2"
+            app:selectedColor="@color/color_white"
+            app:fades="false"/>
+
+    </LinearLayout>
+
+    <!--<include-->
+        <!--layout="@layout/layout_wallet_detail"/>-->
+
+    <!--<wannabit.io.wallet_wannabit.views.KKViewPager-->
+        <!--android:id="@+id/view_pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/tool_bar"-->
+        <!--android:layout_above="@+id/indicator"/>-->
+
+    <!--<wannabit.io.wallet_wannabit.views.UnderlinePageIndicator-->
+        <!--android:id="@+id/indicator"-->
+        <!--android:padding="5dip"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+</RelativeLayout>
+
+
+<!--<android.support.design.widget.CoordinatorLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--tools:context=".acticites.WalletDetailActivity">-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/app_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/wallet_detail_appbar_height"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+        <!--<android.support.design.widget.CollapsingToolbarLayout-->
+            <!--android:id="@+id/collapse_layer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+            <!--app:toolbarId="@+id/toolbar"-->
+            <!--app:collapsedTitleGravity="center_horizontal"-->
+            <!--app:expandedTitleGravity="center"-->
+            <!--android:paddingLeft="0dp"-->
+            <!--android:paddingStart="0dp"-->
+            <!--android:paddingRight="70dp"-->
+            <!--android:paddingEnd="70dp"-->
+            <!--app:title="BTC(bitcoin)">-->
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/tool_bar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/toolbar_bar_height"-->
+                <!--app:layout_collapseMode="pin"-->
+                <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+                <!--app:contentInsetLeft="0dp"-->
+                <!--app:contentInsetStart="0dp"-->
+                <!--app:contentInsetStartWithNavigation="0dp">-->
+            <!--</android.support.v7.widget.Toolbar>-->
+        <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--&lt;!&ndash;<android.support.design.widget.AppBarLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/app_bar"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="@dimen/wallet_detail_appbar_height"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:fitsSystemWindows="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:theme="@style/AppTheme.AppBarOverlay">&ndash;&gt;-->
+        <!--&lt;!&ndash;<android.support.design.widget.CollapsingToolbarLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/collapse_layer"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_scrollFlags="scroll|exitUntilCollapsed"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:titleEnabled="false">&ndash;&gt;-->
+            <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/tool_bar"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="@dimen/toolbar_bar_height"&ndash;&gt;-->
+                <!--&lt;!&ndash;app:layout_collapseMode="pin"&ndash;&gt;-->
+                <!--&lt;!&ndash;app:popupTheme="@style/AppTheme.PopupOverlay">&ndash;&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/toolbar_title"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/font_15_white"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="this is title"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;</android.support.v7.widget.Toolbar>&ndash;&gt;-->
+        <!--&lt;!&ndash;</android.support.design.widget.CollapsingToolbarLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;</android.support.design.widget.AppBarLayout>&ndash;&gt;-->
+
+
+
+    <!--<include layout="@layout/layout_wallet_detail" />-->
+
+<!--</android.support.design.widget.CoordinatorLayout>-->

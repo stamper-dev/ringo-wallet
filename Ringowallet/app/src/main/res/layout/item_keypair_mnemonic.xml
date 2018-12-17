@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mnemonic_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space_12"
+    android:layout_marginRight="@dimen/space_12"
+    android:layout_marginBottom="2dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="@dimen/space_6"
+    app:cardElevation="1.5dp"
+    app:cardBackgroundColor="@color/color_white"
+    app:cardUseCompatPadding="true" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#464f57"
+        android:paddingTop="@dimen/space_24"
+        android:paddingBottom="@dimen/space_20"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingRight="@dimen/space_12">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mnemonics_ic"/>
+            <TextView
+                android:id="@+id/mnemonic_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4"
+                style="@style/font_15_white"
+                android:text="@string/str_mnemonic_check"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

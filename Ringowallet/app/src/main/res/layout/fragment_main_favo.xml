@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="54dp"
+    android:background="@color/color_bg_gray2">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/layer_refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/space_8"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/favo_empty_layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:src="@drawable/transaction_none_img"
+            android:transitionName="topImage"/>
+        <TextView
+            android:id="@+id/trx_empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            android:gravity="center"
+            style="@style/font_12_gray2"
+            android:text="@string/msg_no_favo_list"/>
+    </LinearLayout>
+</RelativeLayout>
