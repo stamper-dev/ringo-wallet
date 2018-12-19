@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  Eostart
+  Ringo Wallet
   <br>
 </h1>
 <h3 align="center">
