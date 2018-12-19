@@ -69,7 +69,7 @@ public class CheckMnemonicFragment extends BaseFragment implements View.OnClickL
         mBtnSkip        = rootView.findViewById(R.id.btn_Skip);
         mTvMsg01.setTypeface(WUtils.getTypefaceRegular(getBaseActivity()));
         mTvMsg02.setTypeface(WUtils.getTypefaceRegular(getBaseActivity()));
-        if(!BaseConstant.IS_SHOWLOG) mBtnSkip.setVisibility(View.GONE);
+        mBtnSkip.setVisibility(View.GONE);
 
 
         for(int i = 0; i < mTvChecks.length; i++) {

@@ -606,7 +606,7 @@ public class WUtils {
             return app.getString(R.string.path_etc);
 
         } else if (type.equals(BaseConstant.COIN_QTUM) || type.equals(BaseConstant.COIN_QRC20)) {
-            return "";
+            return app.getString(R.string.path_qtum);
 
         }
         return "";

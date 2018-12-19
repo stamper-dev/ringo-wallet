@@ -17,6 +17,8 @@ import wannabit.io.ringowallet.acticites.setting.KeyPairSetActivity;
 import wannabit.io.ringowallet.acticites.setting.MnemonicActivity;
 import wannabit.io.ringowallet.acticites.setting.PrivateSetActivity;
 import wannabit.io.ringowallet.base.BaseFragment;
+import wannabit.io.ringowallet.dialog.Dialog_OpenSource;
+import wannabit.io.ringowallet.dialog.Dialog_UsingBio;
 import wannabit.io.ringowallet.utils.WUtils;
 
 public class MainSettingFragment extends BaseFragment implements View.OnClickListener{
@@ -108,9 +110,13 @@ public class MainSettingFragment extends BaseFragment implements View.OnClickLis
             startActivity(telegram);
 
         } else if (v.equals(mBtnGithub)) {
+            Intent github = new Intent(Intent.ACTION_VIEW , Uri.parse("https://github.com/wannabit-dev/ringo-wallet"));
+            startActivity(github);
 
         } else if (v.equals(mBtnLicence)) {
-
+            Dialog_OpenSource dialog = Dialog_OpenSource.newInstance();
+            dialog.setCancelable(true);
+            dialog.show(getFragmentManager(), "dialog");
         }
 
     }

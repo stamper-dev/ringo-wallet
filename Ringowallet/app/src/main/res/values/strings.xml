@@ -34,6 +34,7 @@
     <string name="dialog_delete_title">Delete Key</string>
     <string name="dialog_delete_msg">I hope you have backed up your key or mnemonics.\nDelete without backup, you will never find this key again.</string>
     <string name="dialog_title_no_mnemonic">No Mnemonic</string>
+    <string name="dialog_title_open_source">Open source reference</string>
 
     <string name="str_restore">Restore</string>
     <string name="str_skip">Skip this</string>
@@ -153,6 +154,7 @@
     <string name="msg_prepareing_swap">Preparing</string>
     <string name="msg_request_finger">Use your fingerprint for password</string>
     <string name="msg_no_mnemonic">No Mnemonics are registered. Do you want to init it now?</string>
+    <string name="msg_open_source"><a href="https://github.com/bitcoinj/bitcoinj">BitCoinj</a>\nA library for working with Bitcoin.\n\n\n<a href="https://github.com/web3j/web3j">Web3j</a>\nLightweight Java and Android library for integration with Ethereum clients.\n\n\n<a href="https://github.com/square/retrofit">Retrofit</a>\nType-safe HTTP client for Android and Java by Square, Inc.\n\n\n<a href="https://github.com/sqlcipher/android-database-sqlcipher">android-database-sqlcipher</a>\nAndroid SQLite API based on SQLCipher.\n\n\n<a href="https://github.com/aurelhubert/ahbottomnavigation">ahbottomnavigation</a>\nA library to reproduce the behavior of the Bottom Navigation guidelines from Material Design.\n\n\n<a href="https://github.com/ongakuer/CircleIndicator">CircleIndicator</a>\nA lightweight indicator like in nexus 5 launcher.\n\n\n<a href="https://github.com/ParkSangGwon/TedPermission">TedPermission</a>\nasy check permission library for Android Marshmallow.\n\n\n<a href="https://github.com/bumptech/glide">Glide</a>\nAn image loading and caching library for Android focused on smooth scrolling.\n\n\n<a href="https://github.com/journeyapps/zxing-android-embedded">Zxing</a>\nQR-Code\n\n\n</string>
 
 
 
@@ -202,7 +204,7 @@
     <string name="path_ltc">m/44<![CDATA["'"]]>/2<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>
     <string name="path_bch">m/44<![CDATA["'"]]>/145<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>
     <string name="path_etc">m/44<![CDATA["'"]]>/61<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>
-    <!--<string name="path_quntum">m/44<![CDATA["'"]]>/0<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>-->
+    <string name="path_qtum">m/44<![CDATA["'"]]>/88<![CDATA["'"]]>/0<![CDATA["'"]]>/0/</string>
 
 
     <string-array name="lock_time">
