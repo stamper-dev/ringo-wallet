@@ -23,12 +23,7 @@ public class WQTUMUtils {
 
 
     public WQTUMUtils() {
-        WLog.w("WQTUMUtils");
-        try {
-            this.mParams  = QtumMainNetParams.get();
-        } catch (Exception e) {
-            WLog.w("WQTUMUtils e "  +e.getMessage());
-        }
+        this.mParams  = QtumMainNetParams.get();
 
     }
 

@@ -58,7 +58,6 @@ public class WETCUtils {
         if(key.startsWith("0x")) {
             key = key.substring(2, key.length());
         }
-        WLog.w("key : " + key);
         try {
             BigInteger bigInt = new BigInteger(key, 16);
             ECKeyPair.create(bigInt);

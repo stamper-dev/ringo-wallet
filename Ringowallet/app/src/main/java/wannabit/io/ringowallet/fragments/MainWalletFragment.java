@@ -24,6 +24,7 @@ import wannabit.io.ringowallet.acticites.MainActivity;
 import wannabit.io.ringowallet.acticites.WalletDetailActivity;
 import wannabit.io.ringowallet.base.BaseFragment;
 import wannabit.io.ringowallet.model.WalletItem;
+import wannabit.io.ringowallet.utils.WLog;
 import wannabit.io.ringowallet.utils.WUtils;
 
 public class MainWalletFragment extends BaseFragment {

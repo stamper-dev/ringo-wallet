@@ -414,7 +414,7 @@ public class WalletDetailFragment extends BaseFragment implements View.OnClickLi
 
                 @Override
                 public void onFailure(Call<ResQtumHistory> call, Throwable t) {
-                    WLog.w("ETC onFetchHistory Fail : " + t.getMessage());
+                    WLog.w("QTUM onFetchHistory Fail : " + t.getMessage());
                 }
             });
 

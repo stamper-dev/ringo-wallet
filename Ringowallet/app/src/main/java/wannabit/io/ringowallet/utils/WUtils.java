@@ -865,8 +865,6 @@ public class WUtils {
                 result.add(temp);
             }
         }
-
-        WLog.w("for QTUM add size : " + result.size());
         return result;
     }
 

@@ -223,6 +223,7 @@ public class MainActivity extends BaseActivity implements TaskCallback, BottomSh
 
 
     public void onFetchKeys() {
+        WLog.w("onFetchKeys");
         mWalletItems = getBaseDao().getInitWalletItems();
         ((MainWalletFragment)mPageAdapter.getFragments().get(1)).onSetWallets(mWalletItems);
         onUpdateTotalBalance();
@@ -307,17 +308,13 @@ public class MainActivity extends BaseActivity implements TaskCallback, BottomSh
             if(result.isSuccess) {
                 onCheckCoinPrice();
                 Toast.makeText(this, R.string.msg_wallet_made_success, Toast.LENGTH_SHORT).show();
-                if(mPageAdapter != null && mPageAdapter.getCurrentFragment() != null){
-                    mPageAdapter.getCurrentFragment().onRefreshTab(true);
-                }
+                onFetchKeys();
             } else { }
 
         } else if (result.taskType == BaseConstant.TASK_INSERT_GENERATE_WITH_MNEMONIC) {
             if(result.isSuccess) {
                 Toast.makeText(this, R.string.msg_add_key_success, Toast.LENGTH_SHORT).show();
-                if(mPageAdapter != null && mPageAdapter.getCurrentFragment() != null){
-                    mPageAdapter.getCurrentFragment().onRefreshTab(true);
-                }
+                onFetchKeys();
             } else { }
 
         } else if (result.taskType == BaseConstant.TASK_BALANCE) {
