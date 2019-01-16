@@ -24,6 +24,7 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Collections;
 
+import wannabit.io.ringowallet.R;
 import wannabit.io.ringowallet.base.BaseApplication;
 import wannabit.io.ringowallet.base.BaseConstant;
 import wannabit.io.ringowallet.model.Key;
@@ -31,7 +32,7 @@ import wannabit.io.ringowallet.utils.WLog;
 
 public class EthGasLimitTask extends AsyncTask<String, Void, TaskResult> {
 
-    private BaseApplication mApp;
+    private BaseApplication         mApp;
     private TaskCallback            mCallback;
     private TaskResult              mResult;
 
@@ -57,14 +58,14 @@ public class EthGasLimitTask extends AsyncTask<String, Void, TaskResult> {
      */
     @Override
     protected TaskResult doInBackground(String... strings) {
-        Web3j web3 = Web3jFactory.build(new HttpService("https://mainnet.infura.io/"));
+        Web3j web3 = Web3jFactory.build(new HttpService(mApp.getString(R.string.infura_url)));
         try {
 
             Key key = mApp.getBaseDao().onSelectKey(strings[0]);
             String from_address = key.address;
 
             Function function = new Function(
-                    "transferFrom",
+                    mApp.getString(R.string.str_transfer_from),
                     Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(from_address),
                             new org.web3j.abi.datatypes.Address(strings[1]),
                             new org.web3j.abi.datatypes.generated.Uint256(Convert.toWei(strings[2], Convert.Unit.ETHER).toBigInteger())),

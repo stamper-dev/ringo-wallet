@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import wannabit.io.ringowallet.R;
 import wannabit.io.ringowallet.base.BaseApplication;
 import wannabit.io.ringowallet.base.BaseConstant;
 import wannabit.io.ringowallet.model.Key;
@@ -45,11 +46,11 @@ public class ErcBalanceTask extends BalanceCheckByKeyTask {
 
     @Override
     protected TaskResult doInBackground(Bundle... bundles) {
-        Web3j web3 = Web3jFactory.build(new HttpService("https://mainnet.infura.io/"));
+        Web3j web3 = Web3jFactory.build(new HttpService(mApp.getString(R.string.infura_url)));
         try {
             for(Key key : mKeys) {
                 Function function = new Function(
-                        "balanceOf",
+                        mApp.getString(R.string.str_balance_of),
                         Arrays.<Type>asList(new org.web3j.abi.datatypes.Address(key.address)),
                         Arrays.<TypeReference<?>>asList(new TypeReference<Uint256>() {}));
 

@@ -9,6 +9,7 @@
     <string name="gastracker_info_url">https://api.gastracker.io/</string>
     <string name="blockdozer_info_url">https://bch.blockdozer.com/</string>
     <string name="qtum_info_url">https://explorer.qtum.org/</string>
+    <string name="infura_url">https://mainnet.infura.io/</string>
     <string name="db_pw">test</string>
 
 
@@ -90,6 +91,8 @@
     <string name="str_mnemonics">Mnemonics</string>
     <string name="str_enter_mnemonics">Enter Mnemonics</string>
     <string name="str_share">Share</string>
+    <string name="str_balance_of">balanceOf</string>
+    <string name="str_transfer_from">transferFrom</string>
 
 
 

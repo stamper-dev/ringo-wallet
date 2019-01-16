@@ -154,12 +154,10 @@ public class RestoreByKeyFragment extends BaseFragment implements View.OnClickLi
                 public void onStateChanged(@NonNull View bottomSheet, int newState) {
                     switch (newState) {
                         case BottomSheetBehavior.STATE_EXPANDED:
-                            WLog.w("STATE_EXPANDED");
                             break;
 
                         case BottomSheetBehavior.STATE_COLLAPSED:
                         case BottomSheetBehavior.STATE_HIDDEN:
-                            WLog.w("STATE_HIDDEN");
                             break;
                     }
                 }
@@ -218,15 +216,12 @@ public class RestoreByKeyFragment extends BaseFragment implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-        WLog.w("onClick");
         getBaseActivity().onHideKeyboard();
         mDummyView.requestFocus();
         if (v.equals(mLayerSelectCoin)) {
-            WLog.w("Click mLayerSelectCoin");
             mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
 
         } else if (v.equals(mBtnPaste)) {
-            WLog.w("Click mBtnPaste");
             ClipboardManager clipboard = (ClipboardManager)getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
             if(clipboard.getPrimaryClip() != null && clipboard.getPrimaryClip().getItemCount() > 0) {
                 mEtInputKey.setText(clipboard.getPrimaryClip().getItemAt(0).coerceToText(getActivity()));

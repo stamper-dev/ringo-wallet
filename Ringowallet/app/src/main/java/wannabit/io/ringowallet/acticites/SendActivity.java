@@ -258,7 +258,7 @@ public class SendActivity extends BaseActivity implements View.OnClickListener, 
                 mKey.type.equals(BaseConstant.COIN_ERC20) ||
                 mKey.type.equals(BaseConstant.COIN_ETC)) {
             mIsGasNeed = true;
-            new EthGasPriceTask(this).execute();
+            new EthGasPriceTask(getBaseApplication(), this).execute();
 
         } else {
             mIsGasNeed = false;

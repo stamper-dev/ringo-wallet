@@ -10,6 +10,7 @@ import org.web3j.protocol.http.HttpService;
 
 import java.util.ArrayList;
 
+import wannabit.io.ringowallet.R;
 import wannabit.io.ringowallet.base.BaseApplication;
 import wannabit.io.ringowallet.base.BaseConstant;
 import wannabit.io.ringowallet.model.Key;
@@ -35,7 +36,7 @@ public class EthBalanceTask extends BalanceCheckByKeyTask {
 
     @Override
     protected TaskResult doInBackground(Bundle... bundles) {
-        Web3j web3 = Web3jFactory.build(new HttpService("https://mainnet.infura.io/"));
+        Web3j web3 = Web3jFactory.build(new HttpService(mApp.getString(R.string.infura_url)));
 
         try {
             for(Key key : mKeys) {
@@ -43,6 +44,7 @@ public class EthBalanceTask extends BalanceCheckByKeyTask {
                         .ethGetBalance(key.address, DefaultBlockParameterName.LATEST)
                         .sendAsync()
                         .get();
+                WLog.w("getBalance() : "  + ethGetBalance.getBalance().toString());
                 mApp.getBaseDao().onUpdateBalance(key.uuid, ethGetBalance.getBalance().toString());
             }
             mResult.isSuccess = true;

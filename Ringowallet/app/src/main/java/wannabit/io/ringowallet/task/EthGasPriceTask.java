@@ -8,14 +8,18 @@ import org.web3j.protocol.Web3jFactory;
 import org.web3j.protocol.core.methods.response.EthGasPrice;
 import org.web3j.protocol.http.HttpService;
 
+import wannabit.io.ringowallet.R;
+import wannabit.io.ringowallet.base.BaseApplication;
 import wannabit.io.ringowallet.base.BaseConstant;
 import wannabit.io.ringowallet.utils.WLog;
 
 public class EthGasPriceTask extends AsyncTask<String, Void, TaskResult> {
+    private BaseApplication         mApp;
     private TaskCallback            mCallback;
     private TaskResult              mResult;
 
-    public EthGasPriceTask(TaskCallback mCallback) {
+    public EthGasPriceTask(BaseApplication app, TaskCallback mCallback) {
+        this.mApp = app;
         this.mCallback = mCallback;
 
         this.mResult = new TaskResult();
@@ -25,7 +29,7 @@ public class EthGasPriceTask extends AsyncTask<String, Void, TaskResult> {
 
     @Override
     protected TaskResult doInBackground(String... strings) {
-        Web3j web3 = Web3jFactory.build(new HttpService("https://mainnet.infura.io/"));
+        Web3j web3 = Web3jFactory.build(new HttpService(mApp.getString(R.string.infura_url)));
         try {
 
             EthGasPrice ethGasPrice = web3.ethGasPrice().send();
